@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.descendants * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // add code here
+    $("div").children(".demo").css("color","red")
+});
+</script>
+</head>
+<body>
+
+<div class="descendants" style="width:500px;">div (parent) 
+  <p class="demo">paragraph 1</p>
+  <p>paragraph 2</p>
+</div>
+
+</body>
+</html>
